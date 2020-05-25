@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Verdana";
+}
+
+.main-container {
+    display: block;
+    width: 714px;
+    margin: 0 auto;
+    text-align: center;
+    height: 2092px;
+}
+
+.bloque {   
+ height: auto;
+ 
+}
+
+/* BLOQUES */
+
+/* Bloque a */
+.main-header {
+    height: 68px;
+    /* text-align: center; */
+    color: grey;
+    padding-top: 18px;
+}
+
+.main-header > h4 {
+    font-size: 11px;
+    color: #666766;
+    font-family: "Verdana";
+}
+
+.main-header > span {
+    font-size: 11px;
+    color: #666766;
+}
+
+div.main-header > span > a {
+    color: #d52b1e;
+}
+
+/* Bloque b */
+
+/* Bloque c */
+
+.c {
+    padding-top: 50px;
+}
+
+.c > code {
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #606060;
+    font-family: "Verdana";
+    text-align: center;
+
+}
+
+/* Bloque d */
+
+.d {
+    padding-top: 25px;
+}
+
+.d > h1 {
+    height: 152px;
+    font-size: 51px;
+    line-height: 70px;
+    color: #d52b1e;
+    font-family: "Verdana";
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* Bloque e */
+
+
+
+.e > h3 {
+    height: 49px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 56px;
+    color: #827c81;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+    .e > h4 {
+    height: 49px;
+    font-size: 23px;
+    letter-spacing: -1px;
+    color: #827c81;
+    font-family: "Verdana";
+    font-weight: normal;
+}
+
+/* Bloque f */
+.yellow-square {
+    border: 3px solid transparent;
+    width: 210px;
+    height: 160px;
+    margin: 0 auto;
+    display: non;
+}
+
+/* Bloque g */
+
+.g {
+    padding: 49px 0 40px 0;
+}
+
+.g > p {
+    color: #d52b1e;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 19px;
+}
+
+/* Bloque h */
+
+.card-container {
+    width: 470px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto  ;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 125px;
+    height: 100%;
+}
+
+.upside {
+    height: 50%;
+    color: #d52b1e;
+    border: 2px solid;
+    font-size: 26px;
+    padding: 4px;
+}
+
+
+.downside {
+    background-color: #d52b1e;
+    color: white;
+    height: 50%;
+    font-size: 24px;
+    padding-bottom: 5px;
+    line-height: 20px;
+
+}
+
+.downside > span {
+    font-size: 14px;
+    font-weight: 100;
+    
+
+}
+
+/* Bloque i */
+
+.i {
+    padding-top: 25px;
+}
+
+.i > p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #827c81;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+.i > p > span {
+    font-weight: 100;
+}
+
+/* Bloque j */
+
+.j {
+    padding-top: 20px;
+}
+
+.button {
+    width: 194px;
+    height: 35px;
+    background: linear-gradient(90deg, rgba(220,44,49,1) 0%, rgba(191,37,55,1) 28%, rgba(153,24,62,1) 66%);
+    border-radius: 87px;
+    display: inline-block;
+    padding-top: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+}
+
+.j > .button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -1px;
+
+}
+
+/* Bloque k */
+
+.k {
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    width: 714px;
+}
+
+.k > .left-side {
+    width: 300px;
+    padding: 0 42px 0 28px;
+}
+
+.elipse {
+    height: 204px;
+    position: relative;
+    bottom: 16px;
+    left: -5%;
+}
+
+.elipse-copy {
+    position: absolute;
+    left: 34.5%;
+    top: 255%;
+    transform: scale(-0.8);
+    display: none;
+}
+
+.rectangle {
+    transform: scaley(0.8);
+    top: -228px;
+    position: relative;
+    right: 99px;
+    z-index: -1;
+
+}
+
+.rounded-container {
+    height: 181px;
+    width: 178px;
+    background: green;
+    z-index: 999999;
+    background-image: url(img/two.jpg);
+    background-size: cover;
+    border-radius: 83px;
+    transform: translate(40px, -436px);
+    background-position: -48px 0px;
+}
+
+.right-side {
+    width: 360px;
+    text-align: left;
+}
+
+.right-side > h2 {
+    font-size: 23px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #414042;
+    font-weight: 100;
+    
+}
+
+.supervielle {
+    width: 280px;
+    right: 4%;
+    position: relative;
+}
+
+.button-super {
+    width: 184px;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(220,44,49,1) 0%, rgba(191,37,55,1) 28%, rgba(153,24,62,1) 66%);
+    border-radius: 87px;
+    display: inline-block;
+    padding-top: 11px;
+    padding-left: 7px;
+    padding-right: 7px;
+   
+}
+
+.right-side > .button-super > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10%;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -1px;
+
+}
+
+/* Bloque l */
+
+.l {
+    position: relative;
+    top: -375px;
+}
+
+.l p {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.l > .legales {
+    padding-top: 23px;
+}
+
+
+

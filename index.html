@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="bloque a">
+                <div class="main-header">
+                    <h4>OTRA OPORTUNIDAD PARA DISFRUTAR</h4><span>Si no podes ver este mensaje correctamente, por favor
+                        hacé click en éste <a href="#">link</a></span>
+                </div>
+            </div>
+            <div class="bloque b">
+                <div class="hero"><img src="img\hero-img.png" alt="" class="hero-img"></div>
+            </div>
+            <div class="bloque c"><code class="code-frag">{{contact.contact_name}}</code></div>
+            <div class="bloque d">
+                <h1>¡Planificar tus compras tiene recompensa!</h1>
+            </div>
+            <div class="bloque e">
+                <h3>Beneficio especial</h3>
+                <h4>shoppings adheridos</h4>
+            </div>
+            <div class="bloque f">
+                <div class="yellow-square"><a href="" id="link"><img src="" id="imagen"></a></div>
+            </div>
+            <div class="bloque g">
+                <p>ADQUIRÍ TU VOUCHER</p>
+            </div>
+            <div class="bloque h">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="upside">$1.000</div>
+                        <div class="downside"><span>Llevate</span><br>$1.300</div>
+                    </div>
+                    <div class="card">
+                        <div class="upside">$2.000</div>
+                        <div class="downside"><span>Llevate</span><br>$2.800</div>
+                    </div>
+                    <div class="card">
+                        <div class="upside">$3.000</div>
+                        <div class="downside"><span>Llevate</span><br>$4.500</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloque i">
+                <p>3 cuotas sin interés <br><span>con tus tarjetas Supervielle de crédito</span></p>
+            </div>
+            <div class="bloque j">
+                <div class="button"><a href="http://condimo.com/">Adquirilo ahora »</a></div>
+            </div>
+            <div class="bloque k">
+                <div class="left-side">
+                    <img class="elipse" src="img/Ellipse1.png" alt="">
+                    <img class="elipse-copy" src="img/Ellipse1copy.png" alt="">
+                    <img class="rectangle" src="img/Rectangle1.png" alt="">
+                    <div class="rounded-container"></div>
+                </div>
+                <div class="right-side">
+                    <h2>Todas tus compras <br> suman puntos</h2>
+                    <img class="supervielle" src="img/club-supervielle.png" alt="">
+                    <div class="button-super"><a href="http://condimo.com/">Conocé más »</a></div>
+                </div>
+            </div>
+            <div class="bloque l">
+                <img src="img/BARRASHARE.png" alt="">
+                <p>Encontrá la respuesta más ágil en nuestro Twitter de atención: @VosySupervielle <br>o comunicate
+                    llamando al 011-4959-4959 (CABA y GBA) ó 0810-333-4959 (Interior)</p>
+                <img class="legales" src="img/legales.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script>/**
+        * Array con las imagenes y enlaces que se iran mostrando en la web
+        */
+        var imagenes=new Array(
+           ['img/animacion/1MPS.png','img/animacion/1MPS.png'],
+           ['img/animacion/2AR.png','img/animacion/2AR.png'],
+           ['img/animacion/3AN.png','img/animacion/3AN.png'],
+           ['img/animacion/5Ribera.png','img/animacion/5Ribera.png'],  
+           ['img/animacion/6AC.png','img/animacion/6AC.png'],
+           ['img/animacion/layer_4.png','img/animacion/layer_4.png']
+        );
+        var contador=0;
+        
+        /**
+        * Funcion para cambiar la imagen y link
+        */
+        function rotarImagenes()
+        {
+           // cambio de la imagen y la url
+           contador++
+           document.getElementById("imagen").src=imagenes[contador%imagenes.length][0];
+           document.getElementById("link").href=imagenes[contador%imagenes.length][1];
+        }
+        
+        /**
+        * Función que se ejecuta una vez cargada la página
+        */
+        onload=function()
+        {
+           // Cargar una imagen aleatoria
+           rotarImagenes();
+        
+           // Tiempo de cambio de la imagen
+           setInterval(rotarImagenes,1000);
+        }</script>
+</body>
+
+</html>
